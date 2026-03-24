@@ -213,9 +213,19 @@ aside ul {
 }
 
 .expense {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
   align-items: center;
-  height: 38px;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  min-height: 60px;
+}
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
 }
 
 .expense img:first-child {
@@ -234,6 +244,7 @@ aside ul {
 .expense-info strong {
   font-size: 0.87rem;
   color: #1f2523;
+  font-weight: 700;
 }
 
 .expense-info span {
